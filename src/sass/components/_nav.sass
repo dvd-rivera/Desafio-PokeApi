@@ -1,0 +1,38 @@
+.nav-container
+    width: 100%
+    background-color: white
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    +flex-around
+    height: 70px
+
+    .brand-container
+        width: 200px
+        height: 40px
+        font-size: 30px
+        font-style: italic
+        font-weight: 600
+        +flex-center
+
+        img
+            max-height: 100%
+
+
+    .menu-container
+        +flex-center
+        gap: 20px
+
+        a
+            font-weight: 600
+            cursor: pointer
+            text-decoration: none
+            color: black
+            &:hover
+                color: red
+
+            &.active
+                color: blue
+
+            
